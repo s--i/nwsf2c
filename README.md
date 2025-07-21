@@ -1,2 +1,2 @@
 # nwsf2c
-Firefox addon to converts Fahrenheit temperatures to Celsius on forecast.weather.gov
+Firefox addon that converts Fahrenheit temperatures to Celsius on forecast.weather.gov/MapClick.php

@@ -1,7 +1,7 @@
 /**
  * Converts a Fahrenheit temperature to Celsius.
  * @param {number} fahrenheit - The temperature in Fahrenheit.
- * @param {number} [decimalPlaces=1] - The number of decimal places to round the Celsius temperature to. Defaults to 1.
+ * @param {number} [decimalPlaces=1] - The number of decimal places to round the Celsius temperature to.
  * @returns {string} The temperature in Celsius, rounded to the specified decimal places, as a string.
  */
 function fahrenheitToCelsius(fahrenheit, decimalPlaces = 1) {
@@ -29,7 +29,7 @@ function handleTempParagraph(el) {
 
 /**
  * Handles the conversion for div elements with 'forecast-text' class.
- * E.g., "low around 56" becomes "low around 56°F (13 °C)"
+ * E.g., "low around 56" becomes "low around 56 (13)"
  * @param {HTMLElement} el - The div element to process.
  * @returns {string} The modified text content or the original text if no conversion happened.
  */

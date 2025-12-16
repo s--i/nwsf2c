@@ -35,11 +35,11 @@ function handleTempParagraph(el) {
  */
 function handleForecastTextDiv(el) {
     let newText = el.textContent;
-    newText = newText.replace(/(around|near)\s+(\d+)(?!\s+mph\b)/gi, (match, prefix, fahrenheitStr) => {
+    newText = newText.replace(/(low\saround|high\snear)\s(\d+)\./gi, (match, prefix, fahrenheitStr) => {
         const fahrenheit = parseFloat(fahrenheitStr);
         const celsius = fahrenheitToCelsius(fahrenheit, 0);
 
-        return `${prefix} ${fahrenheitStr} (${celsius})`;
+        return `${prefix} ${fahrenheitStr} (${celsius}).`;
     });
 
     return newText;
